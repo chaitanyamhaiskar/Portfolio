@@ -1,180 +1,695 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <!--  Bootstrap  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light fixed-top">
-        <span class="navbar-brand mb-0 h1">CMxSAHAB</span>
-        <button
-          class="navbar-toggler dark"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml auto offset-sm-6">
-            <li class="nav-item active">
-              <a class="nav-link" href="#aboutme">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section id="aboutme">
-      <div class="row">
-        <div class="col-sm">
-          <h1 style="color: white;">About Me</h1>
-          <div class="typing" id="typedtext">
-            <!--                   <p>Hi, this is Chaitanya Mhaiskar a student of Bachelor of Technology in Computer Science Engineering in PDM University, Bahadurgarh, Haryana.</p>-->
-          </div>
-        </div>
-        <div class="col-sm">
-          <img src="images/cmsahab.jfif"  id="pic" />
-        </div>
-      </div>
-    </section>
-    <br>
-
-    <section class="education" id="education">
-      <br>
-      <h1 style="color: white; margin-top: -7px;">Educaiton Qualifications</h1>
-      <div class="timeline">
-        <div
-          class="timeline__event animated fadeInUp delay-3s timeline__event--type1"
-        >
-          <div class="timeline__event__icon">
-            <i>UG</i>
-          </div>
-          <div class="timeline__event__date">2019-2023</div>
-          <div class="timeline__event__content">
-            <div class="timeline__event__title">
-              BTech. Computer Science Engineering
-            </div>
-            <div class="timeline__event__description">
-              <p>PDM UNIVERSITY Bahadurgarh, Haryana</p>
-              <p>
-                Currently am a student of Computer Science, and focusing for
-                internships and part-time jobs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="timeline__event animated fadeInUp delay-2s timeline__event--type2"
-        >
-          <div class="timeline__event__icon">
-            <i>XII</i>
-          </div>
-          <div class="timeline__event__date">2019</div>
-          <div class="timeline__event__content">
-            <div class="timeline__event__title">CLASS XII, CBSE</div>
-            <div class="timeline__event__description">
-              <p>Vishwa Bharati Public School, Dwarka Sec-6</p>
-              <p>
-                Completed my Senior Secondary with <b><u>78.6%</u></b> from
-                Vishwa Bharati Public School, Dwarka Sec-6, New Delhi.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="timeline__event animated fadeInUp delay-1s timeline__event--type3"
-        >
-          <div class="timeline__event__icon">
-            <i>X</i>
-          </div>
-          <div class="timeline__event__date">2017</div>
-          <div class="timeline__event__content">
-            <div class="timeline__event__title">CLASS X, CBSE</div>
-            <div class="timeline__event__description">
-              <p>Vishwa Bharati Public School, Dwarka Sec-6</p>
-              <p>
-                Completed my Secondary Educaiton with
-                <b><u>9.4 CGPA </u></b> from Vishwa Bharati Public School,
-                Dwarka Sec-6, New Delhi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="skills" id="skills">
-      <div class="container">
-        <h1 style="color: aliceblue;font-weight: 800;letter-spacing: 5px; font-size:50px;">Skills</h1>
-        <br />
-        <div
-          class="bar intermediate"
-          data-skill="ANDROID UX/UI DEVELOPER"></div>
-        <div class="bar front basic" data-skill="ANGULAR-FRAMEWORK"></div>
-        <div class="bar front advanced" data-skill="HTML5"></div>
-        <div class="bar front advanced" data-skill="CSS3"></div>
-        <div class="bar back advanced" data-skill="JAVA"></div>
-        <div class="bar front intermediate" data-skill="C++"></div>
-        <div class="bar front intermediate" data-skill="PYTHON"></div>
-        <div class="bar back expert" data-skill="ANALYTICAL SKILLS"></div>
-        <div class="bar front expert" data-skill="PROBLEM SOLVING"></div>
-        <div class="bar front expert" data-skill="LEADERSHIP QUALITY"></div>
-        <div class="bar front advanced" data-skill="MYSQL"></div>
-        <br>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <br>
-      <div class="contactForm">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
-        <h3 style="color: white; font-weight: 700">Contact Me</h3>
-        <img src="images/whatsapp.png" />
-        <h4>+91 9958453614</h4>
-        <img src="images/envelope.png" /><a href="mailto:chaitanya1592000@gmail.com"
-          ><h4>chaitanya1592000@gmail.com</h4></a
-        >
-        <img src="images/ig.png" /><a href="https://www.instagram.com/cmxsahab/"
-          ><h4>Instagram</h4></a
-        >
-        <img src="images/linkedin.png" /><a
-          href="https://www.linkedin.com/in/chaitanya-mhaiskar-3728091b2/"
-          ><h4>LinkedIn</h4></a
-        >
-        <img src="images/gh.png" /><a href="https://github.com/CMxSAHAB"
-          ><h4>GitHub</h4></a
-        >
-      </div>
-      <br>
-    </section>
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <script src="index.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-  </body>
+        <title>Chaitanya Mhaiskar</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">CMSAHAB</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link ">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-info-alt nav__icon"></i>Skills                                
+                            </a>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-file-info-alt nav__icon"></i>Qualification                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Services                            
+                            </a>
+                        </li>                        
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="htpps://google.com/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="#" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                            <a href="#" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                        <div class="home__image">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="35" y="-30" href="assets/img/mycandid.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I am Chaitanya</h1>
+                            <h3 class="home__subtitle">Data Analyst</h3>
+                            <p class="home__description">student of B.Tech. Computer Science Engineering speacialized with
+                                IBM in BIG DATA ANALYTICS in PDM University, Bahadurgarh, Haryana.</p>
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-message button__icon"></i>
+                                </a>
+                            
+                        </div>
+                        <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <i class="uil uil-mouse-alt home__scroll-mouse" ></i>
+                                <span class="home__scroll-name">Scroll down</span>
+                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/mycandid.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">student of B.Tech. Computer Science Engineering speacialized with
+                            IBM in BIG DATA ANALYTICS in PDM University, Bahadurgarh, Haryana.</p>
+                            <div class="about__info">
+                                <div>
+                                    <span class="about__info-title">+08</span>
+                                    <span class="about__info-name">Years <br> experience </span>
+                                </div>
+                                <div>
+                                    <span class="about__info-title">20+</span>
+                                    <span class="about__info-name">completed <br> projects </span>
+                                </div>
+                                <div>
+                                    <span class="about__info-title">+02</span>
+                                    <span class="about__info-name">companies <br> worked </span>
+                                </div>
+                            </div>
+                            <div class="about__buttons">
+                                <a download="" href="assets/pdf/CHAITANYA.pdf" class="button button--flex">
+                                    Download CV<i class="uil uil-download-alt button__icon"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Technical Level</span>
+                
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open" >
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Frontend Developer</h1>
+                                    <span class="skills__subtitle">HTML CSS JS</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__icon skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JS</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PYTHON</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brain skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__titles">Quality Skills</h1>
+                                    <span class="skills__subtitle">My Personal Skills</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__icon skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">DECISION MAKING</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__decision"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PROBLEM SOLVING</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__problem"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">LEADERSHIP</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__leadership"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">ANALYTICAL SKILLS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__analytical"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div> 
+                    </div>
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION Content 1====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">BTech Computer Science</h3>
+                                    <span class="qualification__subtitle">Current CGPA:8.39 <br> PDM University</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019-Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"> </span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                              <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"> </span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Class XII, CBSE</h3>
+                                    <span class="qualification__subtitle">Percentage:78.6% <br> Vishwa Bharati Public School</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!--==================== QUALIFICATION 3====================-->
+                            <div class="qualification__data">
+                               
+                               <div>
+                                    <h3 class="qualification__title">Class X, CBSE</h3>
+                                    <span class="qualification__subtitle"> CGPA:9.4 <br> Vishwa Bharati Public School</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"> </span> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION Content 2====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">GOOGLE</h3>
+                                    <span class="qualification__subtitle">SDE 2</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019-Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"> </span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                              <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"> </span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">AMAZON</h3>
+                                    <span class="qualification__subtitle">SDE 1</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!--==================== QUALIFICATION 3====================-->
+                            <div class="qualification__data">
+                               
+                               <div>
+                                    <h3 class="qualification__title">MICROSOFT</h3>
+                                    <span class="qualification__subtitle">Internship</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"> </span> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+
+                <div class="services__container container grid">
+            <!--==================== SERVICES 1====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon" ></i>
+                            <h3 class="services__title">Pooja</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Religious Work <br> Purohit</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am preist who do basic Religious Karmakand</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am preist who do basic Religious Karmakand</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am preist who do basic Religious Karmakand</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am preist who do basic Religious Karmakand</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            <!--==================== SERVICES 2====================-->        
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon" ></i>
+                            <h3 class="services__title">Developer</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">develop karya si <br> SDE</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am JAVA Developer</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am Python Coder</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am Android</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I am Web</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent Works</span>
+                
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper ">
+                        <!--==================== PORTFOLIO 1====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio.png" alt="" class="portfolio__image">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Modern Website</h3>
+                                <p class="portfolio__descriptoin">
+                                    Website in progress which is being made responsive
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <div>
+                                <!-- <img src="assets/img/cg_logo.jpeg" width="100" alt="" class="portfolio__image"> -->
+                                <img src="assets/img/splashScreen.jpeg"  alt="" class="port2__images" >
+                                <img src="assets/img/home.jpeg"  alt="" class="port2__images" >
+                                
+                                
+
+                            </div>
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ContentGuru</h3>
+                                <p class="portfolio__descriptoin">
+                                    ContentGuruApp Its a content providing Application for students of class 9-12 CBSE.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio.png" alt="" class="portfolio__image">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Breast Cancer Prediction</h3>
+                                <p class="portfolio__descriptoin">
+                                    It contains the accuracy of the dataset of Breast Cancer patients.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">Contact me now and get a 30% discount on your new project</p>
+                            <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/mycandid.jpg" alt="" class="project__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in Touch</span>
+
+                <div class="contact__container container grid">
+                     <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon" ></i>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+91 9958453614</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">cmxxsahab@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon" ></i>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+91 9958453614</span>
+                            </div>
+                        </div>
+                     </div>
+
+                     <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        <div>
+
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                                
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">CMxSAHAB</h1>
+                        <span class="footer__subtitle">Data Analyst</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li> 
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li> 
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li> 
+
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="mailto:cmxxsahab@gmail.com" target="_blank" class="footer__social">
+                            <i class="uil uil-envelope-edit"></i>    
+                        </a>
+                        <a href="https://www.linkedin.com/in/chaitanya-mhaiskar-3728091b2/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cmxsahab/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://github.com/CMxSAHAB" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; CMxSAHAB. All rights reserved</p>
+            </div>
+         
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+       
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
