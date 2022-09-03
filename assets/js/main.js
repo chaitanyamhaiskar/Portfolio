@@ -180,3 +180,21 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== CONTACT ME ====================*/ 
+document.getElementById('contactForm').addEventListener('submit',submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    //get all the values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const msg = document.getElementById("message").value;
+    console.log(name);
+    console.log(email);
+    console.log(msg);
+
+}
+//Funtion to get values
+
