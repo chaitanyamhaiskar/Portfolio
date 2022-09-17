@@ -295,7 +295,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img{
-  width: 140px;
+  width: 240px;
 }
 .home__data{
   grid-column: 1/3;
