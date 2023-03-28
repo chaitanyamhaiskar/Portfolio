@@ -1,3 +1,6 @@
+// import { initializeApp } from 'firebase/app';
+
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -182,19 +185,52 @@ themeButton.addEventListener('click', () => {
 })
 
 /*==================== CONTACT ME ====================*/ 
+const firebaseConfig = {
+    apiKey: "AIzaSyBOfJdObLQpr-ssfKVS6ntc5TKHWzuI0Fg",
+    authDomain: "portfilio-2bf8c.firebaseapp.com",
+    databaseURL: "https://portfilio-2bf8c-default-rtdb.firebaseio.com",
+    projectId: "portfilio-2bf8c",
+    storageBucket: "portfilio-2bf8c.appspot.com",
+    messagingSenderId: "934073279447",
+    appId: "1:934073279447:web:515b6ca9280e2fdf256192",
+    measurementId: "G-PWQXTTHWTF"
+  };
+// for initialize firebase
+const app = initializeApp(firebaseConfig);
+//   firebase.initializeApp(firebaseConfig);
+// reference
+var contactFormDb = app.database().ref('contactForm');
+
 document.getElementById('contactForm').addEventListener('submit',submitForm);
+
 
 function submitForm(e){
     e.preventDefault();
 
-    //get all the values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const msg = document.getElementById("message").value;
+    var name = getElementValue("name")
+    var mobile = getElementValue("mobnum")
+    var email = getElementValue("email")
+    var msg = getElementValue("message")
     console.log(name);
+    console.log(mobile);
     console.log(email);
     console.log(msg);
 
-}
-//Funtion to get values
+    // saveMessages(name,mobile,email,msg);
 
+}
+const saveMessages = (name,mobile,email,msg)=>{
+    var newContactForm = contactFormDb.push();
+
+    newContactForm.set({
+        name:name,
+        mobileNumber:mobile,
+        email:email,
+        msg:msg
+    })
+
+};0
+
+const getElementValue  =  (id) =>{
+    return document.getElementById(id).value;
+}
